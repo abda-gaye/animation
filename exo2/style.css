@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(42, 40, 40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 30px;
+    color: #fff;
+}
+
+.container{
+    border: 1px solid #fff;
+    position: relative;
+    overflow: hidden;
+}
+.carre1{
+    position: absolute;
+    top: -40px;
+    left: -60px;
+    background-color: red;
+    width: 50%;
+    height: 16vh;
+    transition: 1s all;
+    z-index: -3;
+    color: #fff;
+}
+.carre2{
+    position: absolute;
+    top: -40px;
+    right: -60px;
+    background-color: red;
+    width: 50%;
+    height: 16vh;
+    z-index: -2;
+    transition: 1s all;
+}
+
+.container:hover .carre1{
+    transform: rotate(90deg);
+    left: 0;
+}
+.container:hover .carre2{
+    transform: rotate(-90deg);
+    right: 0;
+}

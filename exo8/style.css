@@ -1,0 +1,39 @@
+body{
+    background: #2f2e2eea;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    color: red;
+    border: 2px solid red;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    width: 20%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cacher1{
+    position: absolute;
+    height: 100%;
+    background-color: red;
+    color: #000;
+    top: -2000px;
+    transition: 1s all;
+    clip-path: circle(0.4% at 49% 100%);
+}
+.container:hover .cacher1{
+    clip-path: inset(0px round 0px 0px 200px 200px);
+    top: 0;
+    width: 100%;
+
+}

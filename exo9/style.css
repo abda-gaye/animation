@@ -1,0 +1,43 @@
+body{
+    background-color: rgba(33, 31, 31, 0.721);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    border: 2px solid red;
+    position: relative;
+}
+.classe1{
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: transparent;
+    color: red;
+    transition: 0.6s all;
+
+}
+.classe2{
+
+    position: absolute;
+    top: 0%;
+    right: 0;
+    background-color: transparent;
+    color: red;
+    transition: all 0.6s;
+
+
+}
+.container:hover .classe1{
+    left: 200px;
+    background-color: blue;
+    
+    
+}
+.container:hover .classe2{
+    right: 200px;
+    background-color: blue;
+}
